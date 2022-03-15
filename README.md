@@ -1,24 +1,31 @@
-# README
+# Company Ledger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We're starting to generate a lot of revenue at Daily Pizza Img Corp. We have a lot of users
+subscribing to our service that provides subscribers with tasty pizza pictures. Our accounting
+team is overwhelmed with all the logins they have to manage to calculate our company earnings
+every month. We'd like to create an in house solution to help them streamline the process. This
+in house soltuion will display an aggregate of all our revenue streams in one place for our
+accounting team.
 
-Things you may want to cover:
+## Version 1 Requirements
 
-* Ruby version
+For our first revision we'd like our company ledge to have the following:
 
-* System dependencies
+- A list of transactions in order of most recent
+- Each item must display the following information:
+  - Date and time of transaction
+  - Amount
+  - A description of the transaction
+  - Which payment gateway was used
+  - Which user the transaction was initialized by
+  - The status of the transaction
+- The list must be paginated
 
-* Configuration
+Our design team mocked up this as a reference:
 
-* Database creation
+![Transactions Preview](https://user-images.githubusercontent.com/34509/158295341-058d2038-60a3-4d55-bd00-0fd9e17bd3da.png)
 
-* Database initialization
 
-* How to run the test suite
+## Version 2 Requirements
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+We're currently working with the product and accounting teams on version 2 requirements.
