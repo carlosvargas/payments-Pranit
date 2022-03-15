@@ -1,0 +1,46 @@
+<h1>Transactions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Processor</th>
+      <th>User ID</th>
+      <th>Status</th
+    </tr>
+  </thead>
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td>
+          <%= transaction.created_at %>
+        </td>
+        <td>
+          <%= transaction.amount %>
+        </td>
+        <td>
+          <%= transaction.description %>
+        </td>
+        <td>
+          <%= transaction.processor %>
+        </td>
+        <td>
+          <%= transaction.user.name %> (<%= transaction.user_id %>)
+        </td>
+        <td>
+          <%= transaction.status %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div>
+  <% @total_pages.times do |page| %>
+    <a href="<%= transactions_path(page: (page + 1)) %>">
+      <%= (page + 1) %>
+    </a>
+  <% end %>
+</div>
