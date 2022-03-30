@@ -5,7 +5,7 @@ ruby "2.7.5"
 
 gem "importmap-rails"
 gem "jbuilder"
-gem "puma", "~> 5.0"
+gem "puma", "~> 5.6"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
